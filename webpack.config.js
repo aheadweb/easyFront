@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyjsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-var LiveReloadPlugin = require('webpack-livereload-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
@@ -79,11 +79,20 @@ module.exports = {
 
 	plugins: [
 		new ExtractTextPlugin('./css/[name].css'),
-		new CleanWebpackPlugin(['dist']),
+//		new CleanWebpackPlugin(['dist']),
 		new CopyWebpackPlugin(
 			[{ from: './img' , to: 'img'}],
 			{ignore: [{glob: 'svg/*'}]}
 		),
-		new LiveReloadPlugin()
+		new BrowserSyncPlugin({
+			// browse to http://localhost:3000/ during development,
+			// ./public directory is being served
+			host: 'localhost',
+			port: 3000,
+			watch: true,
+			server: { 
+				baseDir: ["./dist"] 
+			}
+		  })
 	],
 };
