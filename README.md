@@ -42,9 +42,10 @@ Open folder src/sprite-svg and upload all you *.svg file. Next step includ each 
     import '../sprite-svg/fireworks.svg'
 
 **usege in html**
-<svg>
-  <use xlink:href="svg-sprite/icons.svg#buddha" />
-</svg>
+
+    <svg>
+      <use xlink:href="svg-sprite/icons.svg#buddha" />
+    </svg>
 
 The folder svg-sprite created when you write npm run build. 
 The svg-sprite folder is located in the dist folder, which is created with the npm run build command, that is dist/svg-sprite/icons.svg
