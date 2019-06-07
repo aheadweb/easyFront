@@ -37,8 +37,9 @@ Pay attention to the file mixins.sass it very helpful to you.
 Make svg sprites
 --------
 Open folder src/sprite-svg and upload all you *.svg file. Next step includ each svg to src/js/svg-common.js like this:
-import '../sprite-svg/buddha.svg'
-import '../sprite-svg/fireworks.svg'
+
+    import '../sprite-svg/buddha.svg'
+    import '../sprite-svg/fireworks.svg'
 
 **usege in html**
 <svg>
