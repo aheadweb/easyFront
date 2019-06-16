@@ -28,7 +28,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "watch": "webpack-dev-server --open --host 0.0.0.0 --config webpack.config.js --mode development",
   },
   "keywords": [],
   "author": "",
