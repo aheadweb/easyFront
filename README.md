@@ -49,3 +49,15 @@ Open folder src/sprite-svg and upload all you *.svg file. Next step includ each 
 
 The folder svg-sprite created when you write npm run build. 
 The svg-sprite folder is located in the dist folder, which is created with the npm run build command, that is dist/svg-sprite/icons.svg
+
+Observer via others devices (Windows)
+--------
+* First step
+    Open your console `cmd` and enter `ipconfig`
+    Inline-style:![alt text](https://www.wikihow.com/images_en/thumb/a/aa/Refresh-Your-IP-Address-on-a-Windows-Computer-Step-6-Version-4.jpg/v4-728px-Refresh-Your-IP-Address-on-a-Windows-Computer-Step-6-Version-4.jpg "Logo Title Text 1")
+* Second step
+    Save the IPv4 adress and enter url in line your browser like this: 192.168.52.143:8081 port
+* Third step
+    You can open a similar address on your device.
+
+    
